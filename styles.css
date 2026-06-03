@@ -2,7 +2,7 @@
   --yellow: #FFBD49;
   --yellow-soft: #FFD27A;
   --yellow-dark: #E0A12E;
-  --black: #0A0A0A;
+  --black: #000000;
   --ink: #111;
   --surface: #F6F4EF;
   --card-dark: #141414;
@@ -76,7 +76,7 @@ a {
 
 .bg-ink {
   background: var(--black);
-  color: #fff;
+  color: #000000;
 }
 
 .rounded-brand {
@@ -140,7 +140,7 @@ a {
 /* NAV */
 .navbar {
   padding: 1.1rem 0;
-  background: rgba(255, 255, 255, .85) !important;
+  background: rgba(0, 0, 0, 0.85) !important;
   backdrop-filter: saturate(140%) blur(14px);
 }
 
@@ -154,14 +154,14 @@ a {
 }
 
 .navbar .nav-link {
-  color: #3a3a3a;
+  color: #ffffff;
   font-size: .92rem;
   font-weight: 500;
   position: relative;
 }
 
 .navbar .nav-link:hover {
-  color: #000;
+  color: #ffffff;
 }
 
 .navbar .nav-link::after {
@@ -190,7 +190,7 @@ a {
   align-items: center;
   gap: .4rem;
   background: #0a0a0a;
-  color: #fff;
+  color: #000000;
   padding: .45rem 1rem;
   border-radius: 999px;
   font-size: .72rem;
@@ -223,7 +223,7 @@ a {
   height: 34px;
   border-radius: 50%;
   background: linear-gradient(135deg, #e9e9e9, #bdbdbd);
-  border: 2px solid #fff;
+  border: 2px solid #000000;
   margin-left: -10px;
 }
 
@@ -246,7 +246,7 @@ a {
   content: "";
   position: absolute;
   inset: 6% 12%;
-  background: radial-gradient(circle, rgba(255, 189, 73, .35), transparent 70%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.35), transparent 70%);
   filter: blur(40px);
   z-index: 0;
 }
@@ -261,7 +261,7 @@ a {
 .float-card {
   position: absolute;
   z-index: 2;
-  background: #fff;
+  background: #2f2d2a;
   border-radius: 14px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, .15);
   padding: .8rem 1.1rem;
@@ -277,7 +277,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #fff7e6;
+  background: #2f2d2a;
   color: var(--yellow-dark);
   border-radius: 10px;
   font-size: 1rem;
@@ -322,12 +322,11 @@ a {
 
 /* FEATURE CARDS — cantos arredondados como nos cards do manual */
 .feature-card {
-  background: #fff;
+  background: #2f2d2a;
   border-radius: var(--radius);
   padding: 2rem 1.75rem;
   height: 100%;
   box-shadow: var(--shadow-md);
-  border: 1px solid #f0eee9;
   transition: .25s ease;
 }
 
@@ -439,7 +438,7 @@ a {
 
 /* TECH */
 .tech-card {
-  background: #fff;
+  background: #2f2d2a;
   border: 1px solid #ececec;
   border-radius: var(--radius);
   padding: 1.75rem;
@@ -456,7 +455,7 @@ a {
   width: 46px;
   height: 46px;
   border-radius: 14px;
-  background: #f6f4ef;
+  background: #FFBD49;
   display: inline-flex;
   align-items: center;
   justify-content: center;

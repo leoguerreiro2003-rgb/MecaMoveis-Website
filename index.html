@@ -20,62 +20,78 @@
 <body>
 
   <!-- NAV -->
-  <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <img src="assets/logo.png" alt="Meca Móveis" width="32" height="32">
-        <span class="fw-bold">Meca Móveis</span>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container position-relative"> <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="assets/Logotipo_Branco_1.svg" alt="Meca Móveis" width="40" height="40">
       </a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span
-          class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav mx-auto gap-lg-3">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-lg-center" id="nav">
+        <ul class="navbar-nav gap-lg-3">
           <li class="nav-item"><a class="nav-link" href="#features">Funcionalidades</a></li>
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
           <li class="nav-item"><a class="nav-link" href="#oficinas">Para Oficinas</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contactos</a></li>
         </ul>
-        <a href="tel:+351212345678" class="btn btn-link text-dark text-decoration-none"><i class="bi bi-telephone"></i>
-          212 345 678</a>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <header class="hero py-5">
-    <div class="container py-4">
-      <div class="row align-items-center g-5">
+  <header class="hero min-vh-100 d-flex align-items-center">
+    <div class="container py-5">
+      <div class="row align-items-center g-5 py-5">
+
+        <!-- TEXT SIDE -->
         <div class="col-lg-6">
-          <span class="badge-pill mb-3">Gestão Automotive 2.0</span>
-          <h1 class="display-3 fw-bold lh-1 mb-3">O seu <em class="text-italic">Tracking</em> de <span
-              class="d-block">Automóveis.</span></h1>
-          <p class="lead text-muted mb-4">Monitorize o estado do seu veículo em tempo real, desde a entrada na oficina
-            até à entrega final. Transparência total para proprietários e oficinas.</p>
-          <div class="d-flex flex-wrap gap-2 mb-4">
-            <a href="#" class="btn btn-dark btn-lg px-4">Experimente Agora <i class="bi bi-arrow-right ms-1"></i></a>
-            <a href="#features" class="btn btn-outline-dark btn-lg px-4">Saber Mais</a>
+          <h1 class="display-2 fw-bold lh-sm mb-4">
+            <span class="hw">O Seu Tracking de</span><br>
+            Seu <span class="hw-last">Automóveis.</span>
+          </h1>
+          <p class="hero-lead mb-5">
+            Do momento em que entra na oficina até à entrega final — saiba tudo,<br class="d-none d-lg-block">
+            em tempo real. Transparência absoluta.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-5">
+            <a href="https://github.com/leoguerreiro2003-rgb/Mecamoveis-Site-Web---Tracking-de-Reparacoes-de-Autom-veis-.git"
+              class="btn btn-dark btn-lg px-4">Experimente Agora <i class="bi bi-arrow-right ms-1"></i></a>
           </div>
           <div class="d-flex align-items-center gap-3">
             <div class="avatars d-flex">
               <span class="avatar"></span><span class="avatar"></span><span class="avatar"></span><span
                 class="avatar"></span>
             </div>
-            <small class="text-muted">+150 oficinas já confiam na Meca Móveis</small>
+            <small class="text-white-50">+ de 4 Utilizadores satisfeitos</small>
           </div>
         </div>
-        <div class="col-lg-6 text-center">
-          <div class="phone-wrap">
-            <img src="assets/phone.jpg" alt="App Meca Móveis" class="img-fluid phone-img">
-            <div class="float-card top-card">
-              <i class="bi bi-search"></i>
-              <div><small class="text-muted d-block">Estado do veículo</small><strong>Pintura Concluída</strong></div>
-            </div>
-            <div class="float-card bottom-card">
-              <i class="bi bi-clipboard-check"></i>
-              <div><small class="text-muted d-block">Próximo Agendado</small><strong>Avaliar Projeto</strong></div>
+
+        <!-- PHONE SIDE -->
+        <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
+          <div class="hero-phone-scene">
+            <div class="phone-glow"></div>
+            <div class="phone-frame">
+              <svg viewBox="0 0 320 640" xmlns="http://www.w3.org/2000/svg" class="phone-svg">
+                <rect x="4" y="4" width="312" height="632" rx="48" ry="48" fill="#1a1a1a" stroke="#333"
+                  stroke-width="2" />
+                <rect x="14" y="14" width="292" height="612" rx="40" ry="40" fill="#0d0d0d" />
+                <rect x="110" y="26" width="100" height="26" rx="13" fill="#000" />
+                <circle cx="125" cy="39" r="4" fill="#1a1a1a" />
+                <circle cx="195" cy="39" r="5" fill="#1a1a1a" />
+                <defs>
+                  <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FFBD4908" />
+                    <stop offset="100%" style="stop-color:#FFBD4902" />
+                  </linearGradient>
+                </defs>
+                <rect x="314" y="160" width="6" height="50" rx="3" fill="#2a2a2a" />
+                <rect x="-2" y="140" width="6" height="35" rx="3" fill="#2a2a2a" />
+                <rect x="-2" y="185" width="6" height="35" rx="3" fill="#2a2a2a" />
+              </svg>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </header>
@@ -84,115 +100,91 @@
   <section id="features" class="section-dark py-5">
     <div class="container py-5">
       <div class="text-center mb-5">
-        <span class="text-yellow fw-semibold small text-uppercase">Tudo o que precisa.</span>
-        <h2 class="display-5 fw-bold text-white mt-2">Tudo o que precisa.</h2>
-        <p class="text-white-50 mx-auto" style="max-width:640px">Ferramentas pensadas para facilitar a vida de quem
-          conduz e de quem repara. Centralize toda a comunicação e histórico num só lugar.</p>
+        <h2 class="display-5 fw-bold mt-5 mb-5">Tudo o que <span class="hw-last">precisa.</span></h2>
       </div>
       <div class="row g-4">
-        <!-- card template -->
         <div class="col-md-6 col-lg-4">
           <div class="feature-card">
             <div class="icon-circle"><i class="bi bi-clock-history"></i></div>
-            <h5>Histórico Completo</h5>
-            <p class="small text-muted">Aceda a todos os registos de intervenções passadas, peças substituídas e faturas
+            <h5>Histórico <span class="hw-last">Completo</span></h5>
+            <p class="small text-white">Aceda a todos os registos de intervenções passadas, peças substituídas e faturas
               de forma instantânea.</p>
-            <hr><small class="d-block"><strong class="text-yellow-dark">PARA CLIENTE</strong><br>Nunca perca o rasto do
-              trabalho do seu carro.</small>
-            <small class="d-block mt-2"><strong class="text-yellow-dark">PARA OFICINA</strong><br>Histórico aberto, por
-              diagnósticos precisos.</small>
+
           </div>
         </div>
-
         <div class="col-md-6 col-lg-4">
           <div class="feature-card">
             <div class="icon-circle"><i class="bi bi-clipboard"></i></div>
-            <h5>Orçamentos Transparentes</h5>
-            <p class="small text-muted">Receba e aprove orçamentos detalhados diretamente na app, com fotos e
+            <h5>Orçamentos <span class="hw-last">Transparentes</span></h5>
+            <p class="small text-white">Receba e aprove orçamentos detalhados diretamente na app, com fotos e
               explicações tecnicas claras.</p>
-            <hr><small class="d-block"><strong class="text-yellow-dark">PARA CLIENTE</strong><br>Sem surpresas no fim do
-              pago, à vista.</small>
-            <small class="d-block mt-2"><strong class="text-yellow-dark">PARA OFICINA</strong><br>Aprovações mais
-              rápidas e sem atritos.</small>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-4">
           <div class="feature-card">
             <div class="icon-circle"><i class="bi bi-bell"></i></div>
-            <h5>Alertas em Tempo Real</h5>
-            <p class="small text-muted">Notificações automáticas sobre o progresso da reparação, desde a recolha até à
+            <h5>Alertas em Tempo <span class="hw-last">Real</span></h5>
+            <p class="small text-white">Notificações automáticas sobre o progresso da reparação, desde a recolha até à
               disponibilidade de entrega.</p>
-            <hr><small class="d-block"><strong class="text-yellow-dark">PARA CLIENTE</strong><br>Saiba sempre quando
-              pode ir buscar o seu carro.</small>
-            <small class="d-block mt-2"><strong class="text-yellow-dark">PARA OFICINA</strong><br>Redução de chamadas
-              telefónicas recorrentes.</small>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-4">
           <div class="feature-card">
             <div class="icon-circle"><i class="bi bi-shield-check"></i></div>
-            <h5>Garantia Digital</h5>
-            <p class="small text-muted">Todos os serviços registados ficam protegidos por um selo de autenticidade e
+            <h5>Garantia <span class="hw-last">Digital</span></h5>
+            <p class="small text-white">Todos os serviços registados ficam protegidos por um selo de autenticidade e
               garantia digital.</p>
-            <hr><small class="d-block"><strong class="text-yellow-dark">PARA CLIENTE</strong><br>Segurança de que o
-              serviço foi bem executado.</small>
-            <small class="d-block mt-2"><strong class="text-yellow-dark">PARA OFICINA</strong><br>Profissionalismo e
-              captação de clientes.</small>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-4">
           <div class="feature-card">
             <div class="icon-circle"><i class="bi bi-calendar-event"></i></div>
-            <h5>Agendamento Inteligente</h5>
-            <p class="small text-muted">Reserve slots de manutenção com base na disponibilidade real da oficina e a sua
+            <h5>Agendamento <span class="hw-last">Inteligente</span></h5>
+            <p class="small text-white">Reserve slots de manutenção com base na disponibilidade real da oficina e a sua
               proximidade.</p>
-            <hr><small class="d-block"><strong class="text-yellow-dark">PARA CLIENTE</strong><br>Marque a revisão em 30
-              segundos.</small>
-            <small class="d-block mt-2"><strong class="text-yellow-dark">PARA OFICINA</strong><br>Otimização do fluxo de
-              trabalho na oficina.</small>
+
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="icon-circle"><i class="bi bi-grid-1x2"></i></div>
-            <h5>Interface Integrada</h5>
-            <p class="small text-muted">Uma plataforma que une o seu carro, a equipa da oficina e os concessionários
-              numa só ferramenta.</p>
-            <hr><small class="d-block"><strong class="text-yellow-dark">PARA CLIENTE</strong><br>Tudo o que precisa numa
-              única app.</small>
-            <small class="d-block mt-2"><strong class="text-yellow-dark">PARA OFICINA</strong><br>Gestão com a
-              velocidade do mercado de trabalho.</small>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION: SIMPLES FUNCIONAL INTUITIVO -->
-  <section class="py-5">
-    <div class="container py-5">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-5">
-          <h2 class="display-5 fw-bold lh-1">Simples.<br>Funcional.<br>Intuitivo.</h2>
-          <p class="text-muted mt-3">Com inspiração nos sistemas operativos mais modernos, criámos uma interface simples
-            e fluida. Encontre tudo em poucos toques, sem menus complicados ou excesso de informação.</p>
-          <ul class="list-unstyled mt-4">
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-yellow me-2"></i> Design focado no utilizador</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-yellow me-2"></i> Carregamento instantâneo</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-yellow me-2"></i> Compatível com Android e iOS</li>
-          </ul>
+  <!-- SECTION: BENTO GRID APP SCREENSHOTS -->
+  <section class="bento-section py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold">Veja a <span>Aplicação</span><br><span class="hw-last">por
+            Dentro.</span></h2>
+      </div>
+      <div class="bento-grid mb-3">
+        <div class="bento-card bento-large">
+          <div class="bento-img-wrap">
+          </div>
         </div>
-        <div class="col-lg-7">
-          <div class="screen-block">
-            <div class="screen-label">Veja como é simples</div>
-            <div class="screen-frame">
-              <div class="screen-inner">Screencast</div>
-            </div>
-            <p class="text-muted small mt-3">Encontre tudo em poucos toques.</p>
+        <div class="bento-card bento-medium">
+
+          <div class="bento-img-wrap">
+          </div>
+        </div>
+        <div class="bento-card bento-medium">
+          <div class="bento-img-wrap">
+          </div>
+        </div>
+      </div>
+      <div class="bento-grid-2">
+        <div class="bento-card bento-r2-a">
+          <div class="bento-img-wrap">
+          </div>
+        </div>
+        <div class="bento-card bento-r2-b">
+          <div class="bento-img-wrap">
+          </div>
+        </div>
+        <div class="bento-card bento-r2-c">
+
+          <div class="bento-img-wrap">
+
           </div>
         </div>
       </div>
@@ -200,24 +192,28 @@
   </section>
 
   <!-- SECTION: QUEM SOMOS -->
-  <section id="sobre" class="py-5 bg-light">
+  <section id="sobre" class="py-5">
     <div class="container py-5">
-      <h2 class="text-center fw-bold mb-3">Quem Somos Nós</h2>
-      <p class="text-center text-muted mx-auto mb-5" style="max-width:680px">"Somos uma equipa de 3 estudantes do CTeSP
-        em Tecnologias Web e Dispositivos Móveis da IPMA. Este projeto surge no âmbito do nosso percurso académico, com
+      <h2 class="text-center fw-bold mb-3">Quem Somos <span class="hw-last">Nós</span></h2>
+      <p class="text-center text-white mx-auto mb-5" style="max-width:680px">"Somos uma equipa de 3 estudantes do CTeSP
+        em Tecnologias Web e Dispositivos Móveis do Instituto Politécnico Superior de Beja (IPBeja). Este projeto surge
+        no âmbito do nosso percurso académico, com
         o objetivo de aplicar os conhecimentos de design, UX e desenvolvimento web."</p>
       <div class="row text-center g-4 justify-content-center">
         <div class="col-6 col-md-4 col-lg-3">
           <div class="team-avatar yellow"><i class="bi bi-person-fill"></i></div>
-          <h6 class="mt-3 mb-0">Leandro Dionísio</h6><small class="text-muted">Desenvolvedor de Software</small>
+          <h6 class="mt-3 mb-1">Leandro <span class="hw-last">Dionísio</span></h6><small
+            class="text-white">Desenvolvedor de Software</small>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
           <div class="team-avatar"><i class="bi bi-person-fill"></i></div>
-          <h6 class="mt-3 mb-0">Leandro Pinto</h6><small class="text-muted">Desenvolvedor de Software</small>
+          <h6 class="mt-3 mb-1">Leandro <span class="hw-last">Pinto</span></h6><small class="text-white">Desenvolvedor
+            de Software</small>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
           <div class="team-avatar"><i class="bi bi-person-fill"></i></div>
-          <h6 class="mt-3 mb-0">Filipe Viegas</h6><small class="text-muted">Desenvolvedor de Software</small>
+          <h6 class="mt-3 mb-1">Filipe <span class="hw-last">Viegas</span></h6><small class="text-white">Desenvolvedor
+            de Software</small>
         </div>
       </div>
     </div>
@@ -226,40 +222,36 @@
   <!-- SECTION: COMO CONSTRUÍMOS -->
   <section class="py-5">
     <div class="container py-5">
-      <h2 class="text-center fw-bold">Como Construímos o Projeto</h2>
-      <p class="text-center text-muted mb-5">Tecnologia e dedicação para uma experiência superior.</p>
+      <h2 class="text-center fw-bold mb-5">Como Construímos o <span class="hw-last">Projeto</span></h2>
       <div class="row g-4 justify-content-center">
         <div class="col-md-6 col-lg-4">
           <div class="tech-card">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <span class="tech-icon"><i class="bi bi-code-slash"></i></span>
-              <span class="tag">HTML, CSS, JS</span>
+            <h6 class="fw-bold mb-3">Web</h6>
+            <div class="d-flex align-items-start gap-3">
+              <span class="tech-icon flex-shrink-0"><i class="bi bi-code-slash"></i></span>
+              <p class="small text-white mb-0">A componente web foi desenvolvida com HTML, CSS e JavaScript, com foco na
+                performance e acessibilidade em todos os navegadores.</p>
             </div>
-            <h6 class="fw-bold">Frontend Web</h6>
-            <p class="small text-muted mb-0">A componente web do projeto foi desenvolvida com foco na performance e
-              acessibilidade em todos os navegadores.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="tech-card">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <span class="tech-icon"><i class="bi bi-phone"></i></span>
-              <span class="tag">Kotlin</span>
+            <h6 class="fw-bold mb-3"><span class="hw-last">Kotlin</span></h6>
+            <div class="d-flex align-items-start gap-3">
+              <span class="tech-icon flex-shrink-0"><i class="bi bi-phone"></i></span>
+              <p class="small text-white mb-0">Utilizamos Kotlin com Jetpack Compose para garantir uma experiência
+                mobile fluída, aproveitando ao máximo os recursos dos dispositivos.</p>
             </div>
-            <h6 class="fw-bold">Mobile Nativo</h6>
-            <p class="small text-muted mb-0">Utilizamos Kotlin para garantir uma experiência mobile fluída, aproveitando
-              ao máximo os recursos dos dispositivos.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="tech-card">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <span class="tech-icon"><i class="bi bi-palette"></i></span>
-              <span class="tag">Figma & Feedback</span>
+            <h6 class="fw-bold mb-3"><span class="hw-last">Figma</span></h6>
+            <div class="d-flex align-items-start gap-3">
+              <span class="tech-icon flex-shrink-0"><i class="bi bi-palette"></i></span>
+              <p class="small text-white mb-0">Cada ecrã foi prototipado e testado no Figma para garantir que a curva de
+                aprendizagem seja praticamente nula.</p>
             </div>
-            <h6 class="fw-bold">UX/UI Design</h6>
-            <p class="small text-muted mb-0">Cada ecrã foi prototipado e testado para garantir que a curva de
-              aprendizagem seja praticamente nula.</p>
           </div>
         </div>
       </div>
@@ -269,13 +261,11 @@
   <!-- CTA -->
   <section id="oficinas" class="section-dark py-5">
     <div class="container py-5 text-center">
-      <h2 class="display-4 fw-bold text-white">Pronto para<br>transformar a sua <span
-          class="text-yellow"><em>oficina?</em></span></h2>
+      <h2 class="display-4 fw-bold">Pronto para transformar a sua <span class="hw-last">oficina?</span></h2>
       <p class="text-white-50 mt-3 mx-auto" style="max-width:640px">Junte-se a centenas de oficinas que já utilizam a
         Meca Móveis para gerir reparações com transparência total.</p>
       <div class="d-flex justify-content-center gap-2 mt-4 flex-wrap">
-        <a href="#" class="btn btn-yellow btn-lg px-4">Começar Grátis</a>
-        <a href="#contacto" class="btn btn-outline-light btn-lg px-4">Falar com Consultor</a>
+        <a href="#" class="btn btn-yellow btn-lg px-4">Começar Já</a>
       </div>
     </div>
   </section>
@@ -286,11 +276,10 @@
       <div class="row g-4">
         <div class="col-lg-4">
           <div class="d-flex align-items-center gap-2 mb-3">
-            <img src="assets/logo.png" alt="" width="28" height="28">
+            <img src="assets/Logotipo_Completo_1.svg" alt="" width="68" height="68">
             <strong>Meca Móveis</strong>
           </div>
-          <p class="small text-muted">Meca Móveis — Tracking de confiança para o seu automóvel. Transparência em cada
-            reparação.</p>
+          <p class="small text-white">Meca Móveis — O Seu Tracking de Automóveis.</p>
         </div>
         <div class="col-6 col-lg-2">
           <h6 class="fw-bold small text-uppercase">Links Rápidos</h6>
@@ -302,26 +291,24 @@
           </ul>
         </div>
         <div class="col-6 col-lg-3">
-          <h6 class="fw-bold small text-uppercase">Contacto</h6>
+          <h6 class="fw-bold small text-uppercase">Contactos</h6>
           <ul class="list-unstyled small">
             <li><i class="bi bi-envelope me-2"></i>geral@mecamoveis.pt</li>
             <li><i class="bi bi-telephone me-2"></i>+351 212 345 678</li>
-            <li><i class="bi bi-geo-alt me-2"></i>Lisboa, Portugal</li>
+            <li><i class="bi bi-geo-alt me-2"></i>Beja, Portugal</li>
           </ul>
         </div>
         <div class="col-lg-3">
-          <h6 class="fw-bold small text-uppercase">Siga-nos</h6>
-          <div class="d-flex gap-2">
-            <a href="#" class="social"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="social"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="social"><i class="bi bi-twitter-x"></i></a>
+          <h6 class="fw-bold small text-uppercase">Onde Nos Pode Encontrar</h6>
+          <div class="d-flex gap-2 justify-content-start">
+            <a href="https://github.com/leoguerreiro2003-rgb/Mecamoveis-Site-Web---Tracking-de-Reparacoes-de-Autom-veis-.git"
+              class="social"><i class="bi bi-github"></i></a>
           </div>
         </div>
       </div>
       <hr class="my-4">
       <div class="d-flex justify-content-between flex-wrap small text-muted">
-        <span>© 2026 Meca Móveis. Todos os direitos reservados.</span>
-        <div class="d-flex gap-3"><a href="#">Privacidade</a><a href="#">Termos</a></div>
+        <span>© 2026 Meca Móveis.</span>
       </div>
     </div>
   </footer>

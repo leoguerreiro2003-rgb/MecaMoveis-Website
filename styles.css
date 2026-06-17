@@ -35,6 +35,7 @@ h6,
   letter-spacing: -.02em;
   color: #FFBD49;
 
+
 }
 
 .hw {
@@ -288,18 +289,6 @@ a {
   border-radius: 42px;
 }
 
-@keyframes phoneFloat {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
 /* Float cards */
 .float-card {
   position: absolute;
@@ -418,6 +407,8 @@ a {
   align-items: center;
   justify-content: center;
   margin-bottom: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 1.3rem;
   box-shadow: inset 0 0 0 4px rgba(255, 189, 73, .12);
 }
@@ -701,9 +692,13 @@ a {
 }
 
 .bento-img-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   border-radius: 0 0 18px 18px;
 }
 

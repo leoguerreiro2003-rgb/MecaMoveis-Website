@@ -1,7 +1,5 @@
 :root {
   --yellow: #FFBD49;
-  --yellow-soft: #FFD27A;
-  --yellow-dark: #E0A12E;
   --black: #000000;
   --ink: #111;
   --surface: #F6F4EF;
@@ -140,7 +138,7 @@ a {
 /* NAV */
 .navbar {
   margin-top: 4px;
-  padding: 1.1rem 0;
+  padding: 1.4rem 0;
   background: transparent !important;
 }
 
@@ -150,9 +148,10 @@ a {
 
 .navbar-nav {
   background-color: #2F2D2A;
-  padding: 5px 10px;
-  border-radius: 25px;
+  padding: 8px 18px;
+  border-radius: 30px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+
 }
 
 .navbar.sticky-top {
@@ -160,12 +159,9 @@ a {
 }
 
 .navbar span {
+  font-size: 10em !important;
   font-family: 'Lexend', sans-serif;
   font-weight: medium;
-}
-
-.navbar .nav-title {
-  color: #FFBD49;
 }
 
 .navbar-brand {
@@ -174,8 +170,9 @@ a {
 }
 
 .navbar .nav-link {
+
   color: var(--yellow);
-  font-size: .92rem;
+  font-size: 1.20rem;
   font-weight: 500;
   position: relative;
 }
@@ -202,9 +199,9 @@ a {
 
 /* HERO */
 .hero {
-  background: #000000;
-  overflow: hidden;
+  background: radial-gradient(ellipse at bottom left, rgba(255, 189, 73, 0.25) 0%, rgba(255, 189, 73, 0.05) 40%, #000000 70%);
   position: relative;
+
 }
 
 .hero::before {
@@ -372,9 +369,10 @@ a {
 }
 
 /* DARK SECTIONS */
+
 .section-dark {
+    background: radial-gradient(ellipse at bottom left, rgba(255, 189, 73, 0.25) 0%, rgba(255, 189, 73, 0.05) 40%, #000000 70%);
   background: var(--black);
-  color: #000000;
   position: relative;
   overflow: hidden;
 }
@@ -389,8 +387,9 @@ a {
   pointer-events: none;
 }
 
-.section-dark>* {
+.section-dark {
   position: relative;
+  background: radial-gradient(ellipse at top left, rgba(255, 189, 73, 0.25) 0%, rgba(255, 189, 73, 0.05) 40%, #000000 70%);
 }
 
 /* FEATURE CARDS */
@@ -743,18 +742,24 @@ a {
 
 @media (max-width: 480px) {
 
-  .bento-grid,
-  .bento-grid-2 {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+  .bento-card h2,
+  .bento-card h3,
+  .bento-card p,
+  .bento-card span {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    /* Altera a cor se precisares de mais contraste sobre a imagem */
   }
 
+  /* Garante que a imagem fique mesmo ao fundo (atrás do texto) */
+  .bento-img-wrap {
+    z-index: 1;
+  }
+
+  /* Dá um espaço para o texto respirar e não ficar colado ao topo */
   .bento-card {
-    height: 160px;
+    padding: 20px;
   }
 
-  .bento-large,
-  .bento-r2-c {
-    grid-column: 1;
-  }
 }

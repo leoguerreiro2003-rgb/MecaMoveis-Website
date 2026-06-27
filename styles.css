@@ -3,14 +3,11 @@
      VARIÁVEIS GLOBAIS — edita aqui para mudar o tema todo
      ============================================================ */
   --yellow: #FFBD49;
-<<<<<<< HEAD
   /* cor principal */
   --yellow-soft: #FFD27A;
   /* hover dos botões amarelos */
   --yellow-dark: #E0A12E;
   /* ícones e detalhes */
-=======
->>>>>>> 6fad5628419ea34d015a53a364c2799d8306cf2e
   --black: #000000;
   --ink: #111;
   --surface: #F6F4EF;
@@ -57,14 +54,13 @@ h6,
 /* Classes de cor para spans nos títulos */
 .hw {
   color: #FFBD49;
+  /* palavra em amarelo */
 }
 
-/* palavra em amarelo */
 .hw-last {
   color: #ffffff;
+  /* palavra em branco */
 }
-
-/* palavra em branco */
 
 /* ============================================================
    BASE DO BODY
@@ -138,18 +134,12 @@ a {
 }
 
 /* ============================================================
-   NAvb<r
+   NAVBAR
    ============================================================ */
 .navbar {
-<<<<<<< HEAD
   margin-top: 10px;
   padding: 1.1rem 0;
-=======
-  margin-top: 4px;
-  padding: 1.4rem 0;
->>>>>>> 6fad5628419ea34d015a53a364c2799d8306cf2e
   background: transparent !important;
-
 }
 
 .navbar-collapse {
@@ -158,16 +148,10 @@ a {
 
 .navbar-nav {
   background-color: #2F2D2A;
-<<<<<<< HEAD
   /* pill escuro à volta dos links */
   padding: 5px 10px;
   border-radius: 25px;
-=======
-  padding: 8px 18px;
-  border-radius: 30px;
->>>>>>> 6fad5628419ea34d015a53a364c2799d8306cf2e
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-
 }
 
 .navbar.sticky-top {
@@ -177,10 +161,9 @@ a {
 .navbar span {
   font-size: 10em !important;
   font-family: 'Lexend', sans-serif;
-  font-weight: medium;
+  font-weight: 500;
 }
 
-<<<<<<< HEAD
 .navbar .nav-title {
   color: #FFBD49;
 }
@@ -190,15 +173,12 @@ a {
   height: 56px;
 }
 
-=======
->>>>>>> 6fad5628419ea34d015a53a364c2799d8306cf2e
 .navbar-brand {
   font-weight: 700;
   letter-spacing: -.02em;
 }
 
 .navbar .nav-link {
-
   color: var(--yellow);
   font-size: 1.20rem;
   font-weight: 500;
@@ -209,18 +189,13 @@ a {
   color: #ffffff;
 }
 
-
-.navbar .nav-link:hover::after {
-  color: #ffffff;
-}
-
 /* ============================================================
-   Hero
+   HERO
    ============================================================ */
 .hero {
-  background: radial-gradient(ellipse at bottom left, rgba(255, 189, 73, 0.25) 0%, rgba(255, 189, 73, 0.05) 40%, #000000 70%);
+  background: radial-gradient(ellipse at 20% 50%, rgba(255, 189, 73, 0.22) 0%, transparent 40%);
   position: relative;
-
+  overflow: hidden;
 }
 
 /* Brilho radial decorativo no canto superior direito */
@@ -231,7 +206,7 @@ a {
   right: -100px;
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, rgba(255, 189, 73, .07) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(255, 189, 73, .12) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -266,141 +241,65 @@ a {
 }
 
 /* ============================================================
-   Telefone (SVG animado)
+   EFEITO REUTILIZÁVEL DE GRADIENTES (GLOWS ULTRA FORTES E VARIADOS)
+   ============================================================ */
+.section-dark {
+  background: #000000;
+}
+
+.bg-glow {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bg-glow>.container {
+  position: relative;
+  z-index: 2;
+  /* Garante que o texto fica legível à frente do brilho */
+}
+
+/* Configuração base para as pseudo-camadas de luz */
+.bg-glow::before,
+.bg-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ------------------------------------------------------------
+   VARIAÇÃO 1: Foco Intenso à ESQUERDA (Padrão inicial)
+   ------------------------------------------------------------ */
+.bg-glow {
+  background: radial-gradient(750px 550px at 0% 50%, rgba(255, 189, 73, 0.26), transparent 75%);
+}
+
+.bg-glow.left {
+  background: radial-gradient(750px 550px at 100% 50%, rgba(255, 189, 73, 0.26), transparent 75%);
+}
+
+
+
+/* ============================================================
+   TELEFONE (SVG)
    ============================================================ */
 .hero-phone-scene {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* Brilho por baixo do telefone */
-.phone-glow {
-  position: absolute;
-  width: 340px;
-  height: 500px;
-  background: radial-gradient(ellipse at center, rgba(255, 189, 73, .18) 0%, transparent 65%);
-  filter: blur(40px);
-  z-index: 0;
-  pointer-events: none;
+  z-index: 2;
 }
 
 .phone-frame {
-  position: relative;
-  z-index: 1;
   width: 260px;
-  filter: drop-shadow(0 40px 80px rgba(0, 0, 0, .6));
-  animation: phoneFloat 4s ease-in-out infinite;
-  /* animação de flutuação */
+  max-width: 100%;
 }
-
-.phone-svg {
-  width: 100%;
-  height: auto;
-  border-radius: 42px;
-}
-
-<<<<<<< HEAD
-=======
-/* Float cards */
-.float-card {
-  position: absolute;
-  z-index: 2;
-  background: #1e1c1a;
-  border-radius: 14px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, .4), 0 0 0 1px rgba(255, 189, 73, .12);
-  padding: .8rem 1.1rem;
-  display: flex;
-  align-items: center;
-  gap: .7rem;
-  font-size: .85rem;
-  white-space: nowrap;
-}
-
-.float-card i {
-  width: 36px;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #2f2d2a;
-  color: var(--yellow-dark);
-  border-radius: 10px;
-  font-size: 1rem;
-}
-
-.top-card {
-  top: 12%;
-  right: -60px;
-  animation: cardFloat1 3.5s ease-in-out infinite;
-}
-
-.bottom-card {
-  bottom: 12%;
-  right: -70px;
-  animation: cardFloat2 4s ease-in-out infinite;
-}
-
-.bottom-card i {
-  background: #ffffff;
-  color: var(--yellow);
-}
-
-@keyframes cardFloat1 {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-6px);
-  }
-}
-
-@keyframes cardFloat2 {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(6px);
-  }
-}
-
-/* DARK SECTIONS */
-
->>>>>>> 6fad5628419ea34d015a53a364c2799d8306cf2e
-.section-dark {
-    background: radial-gradient(ellipse at bottom left, rgba(255, 189, 73, 0.25) 0%, rgba(255, 189, 73, 0.05) 40%, #000000 70%);
-  background: var(--black);
-  position: relative;
-  overflow: hidden;
-}
-
-/* Gradientes decorativos de fundo */
-.section-dark::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(800px 400px at 10% 0%, rgba(255, 189, 73, .08), transparent 60%),
-    radial-gradient(600px 400px at 100% 100%, rgba(255, 189, 73, .06), transparent 60%);
-  pointer-events: none;
-}
-
-.section-dark {
-  position: relative;
-  background: radial-gradient(ellipse at top left, rgba(255, 189, 73, 0.25) 0%, rgba(255, 189, 73, 0.05) 40%, #000000 70%);
-}
-
-/* garante que o conteúdo fica acima do ::before */
 
 /* ============================================================
-   Cartões Sobre as Funcionalidades
+   CARTÕES DE FUNCIONALIDADES
    ============================================================ */
 .feature-card {
   background: #2f2d2a;
@@ -417,7 +316,6 @@ a {
   border-color: var(--yellow);
 }
 
-/* Círculo com ícone no topo de cada feature card */
 .icon-circle {
   width: 52px;
   height: 52px;
@@ -435,15 +333,18 @@ a {
 }
 
 /* ============================================================
-   Sobre Nós
+   SOBRE NÓS
    ============================================================ */
 #sobre {
   background: #000000;
+  margin-bottom: 30px;
 }
 
 .team-avatar {
-  width: 96px;
-  height: 96px;
+  display: flex;
+
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: #FFBD49;
   color: #000000;
@@ -456,8 +357,14 @@ a {
 }
 
 /* ============================================================
-   Descrição de Tecnologias (Web / Kotlin / Figma)
+   TECNOLOGIAS
    ============================================================ */
+
+.tech-container {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
 .tech-card {
   background: #2f2d2a;
   border: 1px solid #000000;
@@ -465,6 +372,7 @@ a {
   padding: 1.75rem;
   height: 100%;
   transition: .2s;
+  margin-top: 50px;
 }
 
 .tech-card:hover {
@@ -484,14 +392,101 @@ a {
   color: #0a0a0a;
 }
 
+.feature-card small .text-white {
+  font-size: 1.2em;
+}
+
 /* ============================================================
-   Footer
+   BENTO GRID — CLIENTE E MECÂNICO
+   ============================================================ */
+.bento-section-client,
+.bento-section-mechanic {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.bento-section-mechanic {
+  margin-top: 200px;
+}
+
+.bento-grid-client,
+.bento-grid-client-2,
+.bento-grid-mechanic,
+.bento-grid-mechanic-2 {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bento-card-client,
+.bento-card-mechanic {
+  flex: 1;
+  height: 500px;
+  background: #141414;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 189, 73, .1);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: border-color .25s ease, transform .25s ease;
+  cursor: pointer;
+}
+
+.bento-card-client:hover,
+.bento-card-mechanic:hover {
+  border-color: rgba(255, 189, 73, .35);
+  transform: translateY(-3px);
+}
+
+.bento-img-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-img-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 0 0 18px 18px;
+}
+
+
+/* ============================================================
+   Sobre Nós
+   ============================================================ */
+
+.team-photo {
+
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid rgba(255, 189, 73, .4);
+  display: block;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   FOOTER
    ============================================================ */
 .footer {
   background: #0a0a0a;
   color: #ffffff;
   border-top: 4px solid var(--yellow);
-  /* linha amarela no topo */
 }
 
 .footer h6 {
@@ -513,7 +508,6 @@ a {
   border-color: rgba(255, 255, 255, .08);
 }
 
-/* Ícones sociais redondos */
 .social {
   width: 40px;
   height: 40px;
@@ -534,104 +528,12 @@ a {
 }
 
 /* ============================================================
-   BENTO GRID — cliente
+   RESPONSIVIDADE (MEDIA QUERIES)
    ============================================================ */
-
-.bento-grid-client,
-.bento-grid-client-2,
-.bento-grid-mechanic,
-.bento-grid-mechanic-2 {
-  max-width: 800px;
-  
-}
-
-
-.bento-section-client {
-  margin-top: 200px;
-  margin-bottom: 150px;
-}
-
-.bento-grid-client,
-.bento-grid-client-2 {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.bento-card-client {
-  flex: 1;
-  height: 500px;
-  background: #141414;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 189, 73, .1);
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  transition: border-color .25s ease, transform .25s ease;
-  cursor: pointer;
-}
-
-.bento-card-client:hover {
-  border-color: rgba(255, 189, 73, .35);
-  transform: translateY(-3px);
-}
-
-/* ============================================================
-   BENTO GRID — mecânico
-   ============================================================ */
-.bento-section-mechanic {
-  margin-top: 200px;
-  margin-bottom: 150px;
-}
-
-.bento-grid-mechanic,
-.bento-grid-mechanic-2 {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.bento-card-mechanic {
-  flex: 1;
-  height: 500px;
-  background: #141414;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 189, 73, .1);
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  transition: border-color .25s ease, transform .25s ease;
-  cursor: pointer;
-}
-
-.bento-card-mechanic:hover {
-  border-color: rgba(255, 189, 73, .35);
-  transform: translateY(-3px);
-}
-
-/* Imagem dentro do card */
-.bento-img-wrap {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.bento-img-wrap img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 0 0 18px 18px;
+@media (max-width: 991px) {
+  .phone-frame {
+    width: 220px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -644,19 +546,6 @@ a {
   }
 }
 
-/* ============================================================
-   Responsiviade
-   ============================================================ */
-@media (max-width: 991px) {
-  .phone-frame {
-    width: 220px;
-  }
-}
-
-@media (max-width: 768px) {
-  /* reservado para breakpoints da bento grid */
-}
-
 @media (max-width: 576px) {
   .hero h1 {
     font-size: 2.4rem;
@@ -665,36 +554,4 @@ a {
   .phone-frame {
     width: 200px;
   }
-}
-
-@media (max-width: 480px) {
-<<<<<<< HEAD
-  .bento-grid-client {
-    grid-template-columns: 1fr;
-    /* empilha os cards em mobile */
-    grid-template-rows: auto;
-  }
-=======
-
-  .bento-card h2,
-  .bento-card h3,
-  .bento-card p,
-  .bento-card span {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    /* Altera a cor se precisares de mais contraste sobre a imagem */
-  }
-
-  /* Garante que a imagem fique mesmo ao fundo (atrás do texto) */
-  .bento-img-wrap {
-    z-index: 1;
-  }
-
-  /* Dá um espaço para o texto respirar e não ficar colado ao topo */
-  .bento-card {
-    padding: 20px;
-  }
-
->>>>>>> 6fad5628419ea34d015a53a364c2799d8306cf2e
 }

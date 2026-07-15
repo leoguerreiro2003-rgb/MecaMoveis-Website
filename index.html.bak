@@ -37,7 +37,7 @@
     </div>
   </nav>
 
-  <header class="hero min-vh-100 d-flex align-items-center">
+  <header class="hero min-vh-100 d-flex align-items-center">z
     <div class="container py-5">
       <div class="row align-items-center g-5 py-5">
 
@@ -278,7 +278,7 @@
             <h6 class="fw-bold mb-3">Web</h6>
             <div class="d-flex align-items-start gap-3">
               <span class="tech-icon flex-shrink-0"><i class="bi bi-code-slash"></i></span>
-              <p class="small text-white mb-0">A componente web foi desenvolvida com HTML, CSS e JavaScript e a framework Bootstrap, com foco na
+              <p class="small text-white mb-0">A componente web foi desenvolvida com HTML, CSS e JavaScript, com foco na
                 performance e acessibilidade em todos os navegadores.</p>
             </div>
           </div>
@@ -355,7 +355,7 @@
       </div>
       <hr class="my-4">
       <div class="d-flex justify-content-between flex-wrap small text-muted">
-        <span>© 2026 Meca Móveis. Site Original construído por : Leandro Pinto, Leandro Dionisio e Filipe Viegas </span>
+        <span>© 2026 Meca Móveis. Site Original construído por : Leandro Pinto </span>
       </div>
     </div>
   </footer>

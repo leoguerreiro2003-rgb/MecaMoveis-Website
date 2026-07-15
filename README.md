@@ -1,36 +1,104 @@
-# Meca Móveis, Tracking de Automóveis- Website
+#Meca Móveis – Website Institucional
 
-Website institucional desenvolvido no âmbito do CTeSP em Tecnologias Web e Dispositivos Móveis do Instituto Politécnico de Beja (IPBeja). O projeto funciona como uma plataforma de tracking de reparações automóveis em tempo real.
+O **Meca Móveis** é o website oficial do projeto desenvolvido no âmbito da unidade curricular **Programação de Aplicações no Lado do Cliente (PALC)** do **CTeSP em Tecnologias Web e Dispositivos Móveis** do Instituto Politécnico de Beja.
 
+O website foi criado para divulgar a aplicação móvel **Meca Móveis**, apresentando as suas funcionalidades, tecnologias utilizadas, equipa de desenvolvimento e acesso ao repositório GitHub.
 
-## Funcionalidades
+---
 
-**Design Responsivo:** Totalmente adaptado para dispositivos móveis e desktop através do Bootstrap.
+#Sobre o Projeto
 
-*Menu de Navegação:** Navbar fixa e responsiva com links diretos para as secções da página.
+A aplicação **Meca Móveis** permite acompanhar o estado de reparações automóveis de forma simples e intuitiva.
 
-**Secções Informativas:** Apresentação das vantagens para Clientes e Mecânicos, equipa e tecnologias.
+O website complementa a aplicação móvel, funcionando como uma plataforma de divulgação do projeto através da apresentação de:
 
-**Formulário de Contacto:** Estrutura base para receber interações dos utilizadores.
+- Objetivos do projeto
+- Funcionalidades da aplicação
+- Galeria de ecrãs
+- Tecnologias utilizadas
+- Equipa de desenvolvimento
+- Acesso ao GitHub
 
+---
 
-##Tecnologias Utilizadas
+#Funcionalidades do Website
 
-**HTML5:** Estruturação semântica da página.
+- Página inicial (Hero)
+- Apresentação da aplicação
+- Lista das principais funcionalidades
+- Galeria de ecrãs da aplicação
+- Apresentação da equipa
+- Tecnologias utilizadas
+- Botão de acesso ao repositório GitHub
+- Footer com contactos e ligações úteis
+- Design responsivo para computador, tablet e smartphone
 
-**CSS3:** Estilização e personalização de componentes.
+---
 
-**Bootstrap v5.3:** Framework para o sistema de grelha (Grid) e responsividade.
+#Tecnologias Utilizadas
 
-**Bootstrap Icons:** Biblioteca de ícones utilitários.
+- HTML5
+- CSS3
+- Bootstrap 5
+- Bootstrap Icons
+- JavaScript
 
-##Como Executar o Projeto
+---
 
-Por se tratar de um projeto estático, não é necessária qualquer instalação ou configuração de servidores.
+#Funcionalidades da Aplicação Divulgadas
 
-1. Clone este repositório para a sua máquina local:
-   ```bash
-   git clone [https://github.com/leoguerreiro2003-rgb/Mecamoveis-Site-Web---Tracking-de-Reparacoes-de-Autom-veis-.git]
-   (https://github.com/leoguerreiro2003-rgb/Mecamoveis-Site-Web---Tracking-de-Reparacoes-de-Autom-veis-.git)
+O website apresenta as principais funcionalidades da aplicação móvel:
 
-  Ou Simplesmente clonar o repositório na opção de colonar o repositório dentro do site GitHub.
+- Registo de clientes
+- Registo de mecânicos
+- Gestão de veículos
+- Gestão de orçamentos
+- Gestão de reparações
+- Acompanhamento do estado da reparação
+- Histórico de orçamentos
+- Interface dedicada para Cliente e Mecânico
+
+---
+
+#Equipa
+
+- Leandro Dionísio
+- Leandro Pinto
+- Filipe Viegas
+
+Instituto Politécnico de Beja
+
+Curso:
+**CTeSP em Tecnologias Web e Dispositivos Móveis**
+
+---
+
+#Como Executar
+
+Este projeto é totalmente estático, não sendo necessária qualquer instalação adicional.
+
+1. Clone o repositório
+
+```bash
+git clone https://github.com/leoguerreiro2003-rgb/Mecamoveis-Site-Web---Tracking-de-Reparacoes-de-Autom-veis-.git
+```
+
+2. Abra a pasta do projeto.
+
+3. Execute o ficheiro **index.html** num navegador.
+
+Também pode utilizar a extensão **Live Server** do Visual Studio Code.
+
+---
+
+#Estrutura do Projeto
+
+```
+assets/
+css/
+js/
+index.html
+... (14 lines left)
+
+ReadMe.txt
+3 KB
